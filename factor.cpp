@@ -2,25 +2,17 @@
 using namespace std;
 int main()
 {
-    int n,count=0;
+    int n;
     cout<<"Enter value of n:";
     cin>>n;
+    cout<<"Factors of "<<n<<"are:";
     for(int i=1;i<=n;i++)
     {
         if(n%i==0)
         {
-            count++;
+            cout<<"\n"<<i;
         }
     }
-    if(count==2)
-    {
-        cout<<n<<"is prime number";
-    }
-    else
-    {
-        cout<<"It is not pime number";
-    }
-    
 
     return 0;
 }
